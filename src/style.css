@@ -1,0 +1,28 @@
+div :first-child {
+
+    text-align: center;
+    color:white;
+}
+  
+ body{
+background-color: black;
+ }
+
+ .card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-top: 10px;
+}
+
+
+ button {
+    background-color: rgb(98, 161, 203);
+    width : 15% ;
+    height: 25%;
+    cursor: pointer;
+    color :aliceblue;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 9999px;
+    margin-top: 15px;
+
+}
