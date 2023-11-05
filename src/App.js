@@ -1,11 +1,11 @@
 
 import React from "react";
-import './style.css';
-import Card from 'react-bootstrap/Card';
-import photo from './myPhoto.jpg';
+import './style.css'; // importation style 
+import Card from 'react-bootstrap/Card'; // importation card 
+import photo from './myPhoto.jpg'; //importation my photo
 
 class App extends React.Component {
-
+// declaration state
 state = {
 
             Person : {
@@ -21,14 +21,14 @@ state = {
 
 
 componentDidMount(){
-
+// function claluler le temps de composant
   setInterval(()=> {
 
     this.setState({time:this.state.time+1})
   },1000
 );
 }
-
+ //  tets  des attribiut show
 testShow = () => {
   this.setState((prevState) => ({ show: !prevState.show }));
 };
@@ -42,15 +42,7 @@ return (
           
            <div className="content">
             {this.state.show && (
-/*
-                
-                <p><strong>{this.state.Person.fullName}</strong></p>
-                <p>{this.state.Person.bio}</p>
-                <p>{this.state.Person.profession}</p>
-                
-          <div>      <h1 clasName="time"> Time : {this.state.time} second </h1>
-                </div>
-          */
+
 <div>
         <Card  className="Card" style={{ width: '18rem' }}>
       <Card.Img src={this.state.Person.image} alt="my photo" width="250" height="250"/>
